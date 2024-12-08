@@ -43,7 +43,9 @@
       cursor: pointer;
     }
 
-    .bar1, .bar2, .bar3 {
+    .bar1,
+    .bar2,
+    .bar3 {
       width: 35px;
       height: 5px;
       background-color: white;
@@ -55,7 +57,9 @@
       transform: translate(0, 11px) rotate(-45deg);
     }
 
-    .change .bar2 {opacity: 0;}
+    .change .bar2 {
+      opacity: 0;
+    }
 
     .change .bar3 {
       transform: translate(0, -11px) rotate(45deg);
@@ -79,27 +83,27 @@
         </ul>
       </div>
       <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-   </nav>
-     <div class="slider">
-        <div class="slides">
-          <div class="slide"><img src="Photos/bg.png" alt="Sumlang Lake" class="image1" height="50px" width="50px"></div>
-          <div class="slide"><img src="Photos/a.jpg" alt="Image 2" class="image2" height="50px" width="50px"></div>
-          <div class="slide"><img src="Photos/c.jpg" alt="Image 3" class="image3" height="30px" width="30x"></div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="indicator-dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-       </div>
+    </nav>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="Photos/bg.png" alt="Sumlang Lake" class="image1" height="50px" width="50px"></div>
+        <div class="slide"><img src="Photos/a.jpg" alt="Image 2" class="image2" height="50px" width="50px"></div>
+        <div class="slide"><img src="Photos/c.jpg" alt="Image 3" class="image3" height="30px" width="30x"></div>
       </div>
-     <div class="text-box">
-       <h1>SUMLANG LAKE</h1>
-        <p>Our open spaces, punctuated by Sumlang Lake & Mayon Volcano, provide the perfect backdrop for photo and video
-          shoots, <br> as well as the ideal ambiance for peaceful walks and quiet contemplation.</p>
-        <a href="https://www.youtube.com/watch?v=3tUYgUUNWAg" class="hero-btn">Visit Us to Know More</a>
-     </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="indicator-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="text-box">
+      <h1>SUMLANG LAKE</h1>
+      <p>Our open spaces, punctuated by Sumlang Lake & Mayon Volcano, provide the perfect backdrop for photo and video
+        shoots, <br> as well as the ideal ambiance for peaceful walks and quiet contemplation.</p>
+      <a href="https://www.youtube.com/watch?v=3tUYgUUNWAg" class="hero-btn">Visit Us to Know More</a>
+    </div>
   </section>
 
   <script>
@@ -121,37 +125,37 @@
 
     function stopSlideShow() {
       clearInterval(slideInterval);
-    } 
+    }
 
     function plusSlides(n) {
-      stopSlideShow(); 
+      stopSlideShow();
       slideIndex += n;
       showSlides();
       startSlideShow();
     }
 
     function currentSlide(n) {
-      stopSlideShow(); 
+      stopSlideShow();
       slideIndex = n - 1;
       showSlides();
-      startSlideShow(); 
+      startSlideShow();
     }
-  
+
     function showSlides() {
       let slides = document.getElementsByClassName("slide");
       let dots = document.getElementsByClassName("dot");
       if (slideIndex >= slides.length) { slideIndex = 0 }
       if (slideIndex < 0) { slideIndex = slides.length - 1 }
       for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+        slides[i].style.display = "none";
       }
       for (let i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
       }
       slides[slideIndex].style.display = "block";
       dots[slideIndex].className += " active";
     }
-    
+
     showSlides();
     startSlideShow();
   </script>
@@ -228,166 +232,159 @@
       </div>
     </section>
 
-    <section class="experiences-container" id="experiences">
-      <h2>Experiences</h2>
-      <div class="experiences-item">
-        <h3>Where to go and activities to do in Sumlang Lake</h3>
-
-        <div class="experiences-item">
-          <h4>Socorro’s The Venue</h4>
-          <p><strong>Events Venue, Catering Services, Decorating Services || Where Extraordinary Happens</strong></p>
-          <img src="expi/img.png" alt="expi">
-          <p>Socorro's The Venue is a premier event destination known for transforming any occasion into an
-            unforgettable
-            experience. Specializing in a wide range of events—whether weddings, corporate gatherings, or private
-            celebrations—the venue offers a versatile, elegant setting that can accommodate a variety of needs.<br>
-            In addition to its stunning event space, Socorro’s The Venue provides full-service catering and decorating
-            solutions. From gourmet cuisine to beautifully curated décor, their team ensures that every detail is
-            perfectly tailored to the client’s vision, creating a seamless and memorable event.<br>
-            At Socorro’s The Venue, the focus is on making every event extraordinary. With a team dedicated to bringing
-            dreams to life, clients can expect a flawless experience from start to finish. Whether it’s a grand
-            celebration or an intimate gathering, Socorro’s The Venue guarantees an exceptional experience where
-            extraordinary truly happens.
-          </p>
-        </div>
-
-        <div class="experiences-item">
-          <h4>Socorro’s Lakeside Restaurant and Grill</h4>
-          <p><strong>Opens at 10am - 5pm daily</strong></p>
-          <img src="expi/img.png" alt="expi">
-          <p>Set against the stunning backdrop of a tranquil lake and majestic Mt. Mayon, Socorro’s Lakeside Restaurant
-            and Grill offers a perfect blend of breathtaking views and authentic Bicolano cuisine. The restaurant
-            features
-            a charming atmosphere with friendly, accommodating staff dedicated to providing an exceptional dining
-            experience. <br>
-            Guests rave about the rich flavors of classic Bicolano dishes, like creamy Pinangat with the perfect balance
-            of spice, crispy and flavorful Pata, and fresh, sweet Grilled Tanigue. Whether you're craving local flavors
-            or
-            enjoying a special occasion, Socorro’s Lakeside guarantees a memorable meal in a beautiful setting. <br>
-            Highly recommended for great food, top-notch service, and unforgettable views.
-          </p>
-        </div>
-
-        <div class="experiences-item">
-          <h4>Socorro’s Café</h4>
-          <p><strong>Opens at 9am - 8pm daily</strong></p>
-          <img src="expi/img.png" alt="expi">
-          <p>At Socorro’s Café, every cup of coffee is an experience. Nestled in a tranquil spot with the breathtaking
-            Mayon Volcano as its backdrop, the café offers a perfect blend of rich flavors and natural beauty. Whether
-            you're enjoying a freshly brewed espresso or a soothing tea, the serene atmosphere and stunning views create
-            an unforgettable setting for relaxation. <br>
-            Sipping your favorite drink while soaking in the magnificence of Mayon, it’s more than just coffee—it’s a
-            moment of peace, nature, and flavor combined. <br>
-            They also have a branch in Quitinday Green Hills, Camalig, Albay, offering a peaceful retreat surrounded by
-            nature’s beauty. Nestled in the heart of rolling hills, Socorro’s Café in Quitinday provides a serene escape
-            with stunning panoramic views of the lush landscape. The cozy, welcoming ambiance is perfect for enjoying a
-            rich cup of coffee, freshly brewed to perfection, paired with light bites and pastries.
-          </p>
-        </div>
-
-        <div class="experiences-item">
-          <h4>Socorro’s The Venue</h4>
-          <p><strong>Events Venue, Catering Services, Decorating Services || Where Extraordinary Happens</strong></p>
-          <img src="expi/img.png" alt="expi">
-          <p>Socorro's The Venue is a premier event destination known for transforming any occasion into an
-            unforgettable
-            experience. Specializing in a wide range of events—whether weddings, corporate gatherings, or private
-            celebrations—the venue offers a versatile, elegant setting that can accommodate a variety of needs.<br>
-            In addition to its stunning event space, Socorro’s The Venue provides full-service catering and decorating
-            solutions. From gourmet cuisine to beautifully curated décor, their team ensures that every detail is
-            perfectly tailored to the client’s vision, creating a seamless and memorable event.<br>
-            At Socorro’s The Venue, the focus is on making every event extraordinary. With a team dedicated to bringing
-            dreams to life, clients can expect a flawless experience from start to finish. Whether it’s a grand
-            celebration or an intimate gathering, Socorro’s The Venue guarantees an exceptional experience where
-            extraordinary truly happens.
-          </p>
-        </div>
-
-        <div class="experiences-item">
-          <h4>Fishyalan</h4>
-          <img src="expi/img.png" alt="expi">
-          <p>Fishyalan, located at the scenic Sumlang Lake, offers an ideal spot for visitors who enjoy fishing in a
-            peaceful, natural setting. Situated just behind the parking area of Socorro’s The Venue, this charming
-            attraction is operated by the Sumlang Fisherfolks Association, a dedicated local organization that promotes
-            sustainable fishing practices. <br>
-            Whether you're a seasoned angler or just looking to unwind by the water, Fishyalan provides a tranquil
-            environment to enjoy fishing while taking in the beauty of the lake. It’s a perfect way to connect with
-            nature and experience the calm of Sumlang Lake.
-          </p>
-          <blockquote>
-            <p><strong>Fishing Rates</strong></p>
-            <ol>
-              Fish Feeding: Php 20.00 <br>
-              Fishing Equipment Rental: Php 50.00 <br>
-              Fish: Php 150.00 / kilo <br>
-            </ol>
-          </blockquote>
-        </div>
-
-        <div class="experiences-item">
-          <h4>NAPA Food & Craft Pasalubong Center OTOP Hub</h4>
-          <p><strong>ONE TOWN, ONE PRODUCT (OTOP HUB) Philippines</strong></p>
-          <img src="expi/img.png" alt="expi">
-          <p>In partnership with NAPA Food & Craft Pasalubong Center at Sumlang Lake is a priority program for MSMEs as
-            governments customized interventions to drive inclusive growth for local economic growth. <br>
-            Visitors can explore a wide variety of authentic Bicolano products, including flavorful Pili nuts, indulgent
-            Pili chocolate, artisanal handmade pottery, crispy Taro chips, creamy Cassava cheesecake, and savory Carrot
-            Pancit, among many others. Each item reflects the rich cultural heritage and local talent of the region,
-            offering both a taste of Bicol and a chance to support local businesses. <br>
-            In addition to its main branch at Sumlang Lake, the NAPA Food & Craft Pasalubong Center also has a vibrant
-            location at Quitinday Green Hills.
-          </p>
-        </div>
-
-        <div class="experiences-item">
-          <h3>Things to Do at Sumlang Lake</h3>
-          <h4>Balsa Ride</h4>
-          <p>While swimming isn't allowed in the lake, you can enjoy a ride on a balsa (bamboo raft) for a unique
-            experience and great photos for your Instagram.
-          </p>
-          <img src="expi/img.png" alt="expi">
-        </div>
-
-        <hr>
-
-        <div class="experiences-item">
-          <h4>Cultural Demonstration</h4>
-          <p>Immerse yourself in local culture with a visit to the cottages near the souvenir shop, where you can watch
-            cooking demonstrations showcasing Bicolano dishes like pinangat and more!</p>
-          <img src="expi/img.png" alt="expi">
-        </div>
-
-        <hr>
-
-        <div class="experiences-item">
-          <h4>Learn Abaca Weaving</h4>
-          <p>Discover the traditional art of abaca weaving—learn how strips of abaca are prepared and crafted into
-            beautiful bags and other local products.
-          </p>
-          <img src="expi/img.png" alt="expi">
-        </div>
-
-        <hr>
-
-        <div class="experiences-item">
-          <h4>Shop for Souvenirs</h4>
-          <p>Don’t forget to stop by the souvenir shop, where you can pick up locally made items such as bags, baskets,
-            home décor, and delicious pasalubong (souvenirs) to take home.
-          </p>
-          <img src="expi/img.png" alt="expi">
-        </div>
-
-        <hr>
-
-        <div class="experiences-item">
-          <h4>Capture the Moment</h4>
-          <p>Make sure to snap some photos with the stunning Mt. Mayon in the background to capture the beauty of your
-            visit—picture or it didn’t happen!
-          </p>
-          <img src="expi/img.png" alt="expi">
-        </div>
+    <p class="main-header1" id="experiences"> EXPERIENCES </p>
+    <div class="wrapper">
+      <h2>Socorro’s The Venue</h2>
+      <div class="image-container">
+        <img src="Photos/365450991_713196864153776_8427043726075931265_n.jpg" alt="Placeholder Image">
       </div>
-    </section>
+      <p class="pemphasized"> <br> Where Extraordinary Happens <br> Events Venue, Catering Services, Decorating Services
+      </p>
+      <p class="description">
+        Socorro's The Venue is a premier event destination known for transforming any occasion into an unforgettable
+        experience.
+        Specializing in a wide range of events—whether weddings, corporate gatherings, or private celebrations—the venue
+        offers a
+        versatile, elegant setting that can accommodate a variety of needs. <br>
+      <p class="description"> In addition to its stunning event space, Socorro’s The Venue provides full-service
+        catering and decorating solutions. From gourmet cuisine to beautifully curated décor, their team ensures that
+        every detail is perfectly tailored to the client’s vision, creating a seamless and memorable event. </p>
+      <p class="description"> At Socorro’s The Venue, the focus is on making every event extraordinary. With a team
+        dedicated to bringing dreams to life, clients can expect a flawless experience from start to finish. Whether
+        it’s a grand celebration or an intimate gathering, Socorro’s The Venue guarantees an exceptional experience
+        where extraordinary truly happens.</p>
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Socorro’s Lakeside Restaurant and Grill</h1>
+      <div class="image-container">
+        <img src="Photos/slgr3.jpg" alt="Placeholder Image">
+      </div>
+      <p class="pemphasized"> Opens at 10am - 5pm daily </p>
+      <p class="description">
+        Set against the stunning backdrop of a tranquil lake and majestic Mt. Mayon, Socorro’s Lakeside Restaurant and
+        Grill offers a
+        perfect blend of breathtaking views and authentic Bicolano cuisine.
+      </p>
+      <p class="description">
+        Guests rave about the rich flavors of classic Bicolano dishes, like creamy Pinangat with the perfect balance of
+        spice, crispy and flavorful Pata, and fresh, sweet Grilled Tanigue. Whether you're craving local flavors or
+        enjoying a special occasion, Socorro’s Lakeside guarantees a memorable meal in a beautiful setting. Highly
+        recommended for great food, top-notch service, and unforgettable views.
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Socorro’s Café </h1>
+      <div class="image-container">
+        <img src="Photos/cafe2.jpg" alt="Placeholder Image">
+      </div>
+      <p class="pemphasized"> Sumlang Lake Branch: 9am - 8pm daily <br> Quitinday Hills Branch: 9am - 5pm daily </p>
+      <p class="description">
+        At Socorro’s Café, every cup of coffee is an experience. Nestled in a tranquil spot with the breathtaking Mayon
+        Volcano as its backdrop,
+        the café offers a perfect blend of rich flavors and natural beauty. Whether you're enjoying a freshly brewed
+        espresso or a soothing tea, the serene atmosphere and stunning views create an unforgettable setting for
+        relaxation. </p>
+      <p class="description">
+        Sipping your favorite drink while soaking in the magnificence of Mayon, it’s more than just coffee—it’s a moment
+        of peace, nature, and flavor combined. </p>
+      <p class="description">
+        They also have a branch in Quitinday Green Hills, Camalig, Albay, offering a peaceful retreat surrounded by
+        nature’s beauty. Nestled in the heart of rolling hills, Socorro’s Café in Quitinday provides a serene escape
+        with stunning panoramic views of the lush landscape. The cozy, welcoming ambiance is perfect for enjoying a rich
+        cup of coffee, freshly brewed to perfection, paired with light bites and pastries.
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Fishyalan</h1>
+      <div class="image-container">
+        <img src="Photos/fishyalan.jpg" alt="Placeholder Image">
+      </div>
+      <p class="pemphasized"> Fishing rates<br>
+        Fish feeding: Php 20.00 <br>
+        Fishing equipment rental: Php 50.00 <br>
+        Fish: Php 150.00 / kilo <br> </p>
+      <p class="description">
+        Fishyalan, located at the scenic Sumlang Lake, offers an ideal spot for visitors who enjoy fishing in a
+        peaceful, natural setting.
+      </p>
+      <p class="description"> Whether you're a seasoned angler or just looking to unwind by the water, Fishyalan
+        provides a tranquil environment to enjoy fishing while taking in the beauty of the lake. It’s a perfect way to
+        connect with nature and experience the calm of Sumlang Lake. </p>
+
+      <div class="section-space"></div>
+      <h1>NAPA Food & Craft <br> Pasalubong Center OTOP Hub</h1>
+      <div class="image-container">
+        <img src="Photos/otop1.jpg" alt="Placeholder Image">
+      </div>
+      <p class="pemphasized"> ONE TOWN, ONE PRODUCT (OTOP HUB) Philippines </p>
+      <p class="description">
+        In partnership with NAPA Food & Craft Pasalubong Center at Sumlang Lake is a priority program for MSMEs as
+        governments customized interventions to drive inclusive growth for local economic growth. </p>
+      <p class="description">
+        Visitors can explore a wide variety of authentic Bicolano products, including flavorful Pili nuts, indulgent
+        Pili chocolate, artisanal handmade
+        pottery, crispy Taro chips, creamy Cassava cheesecake, and more.
+      </p>
+      <p class="dsecription">
+        In addition to its main branch at Sumlang Lake, the NAPA Food & Craft Pasalubong Center also has a vibrant
+        location at Quitinday Green Hills.
+      </p>
+
+      <p class="main-header2"> THINGS TO DO <br> AT SUMLANG LAKE </p>
+
+      <div class="section-space"></div>
+      <h1>Balsa Ride</h1>
+      <div class="image-container">
+        <img src="Photos/raft.jpg" alt="Placeholder Image">
+      </div>
+      <p class="description">
+        While swimming isn't allowed in the lake, you can enjoy a ride on a balsa (bamboo raft) for a unique experience
+        and great photos for your Instagram.
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Cultural Demonstration</h1>
+      <div class="image-container">
+        <img src="Photos/kiosk.jpg" alt="Placeholder Image">
+      </div>
+      <p class="description">
+        Immerse yourself in local culture with a visit to the cottages near the souvenir shop, where you can watch
+        cooking demonstrations showcasing
+        Bicolano dishes like pinangat and more!
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Learn Abaca Weaving</h1>
+      <div class="image-container">
+        <img src="Photos/weaving.avif" alt="Placeholder Image">
+      </div>
+      <p class="description">
+        Discover the traditional art of abaca weaving—learn how strips of abaca are prepared and crafted into beautiful
+        bags and other local products.
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Shop for Souvenirs</h1>
+      <div class="image-container">
+        <img src="Photos/otop2.jpg" alt="Placeholder Image">
+      </div>
+      <p class="description">
+        Don’t forget to stop by the souvenir shop, where you can pick up locally made items such as bags, baskets, home
+        décor, and delicious pasalubong
+        (souvenirs) to take home.
+      </p>
+
+      <div class="section-space"></div>
+      <h1>Capture the Moment</h1>
+      <div class="image-container">
+        <img src="Photos/sl escapade.jpg" alt="Placeholder Image">
+      </div>
+      <p class="description">
+        Make sure to snap some photos to capture your unforgettable experience at Sumlang Lake!
+      </p>
+    </div>
+    </p>
 
     <section class="vicinitymap-container" id="vicinity-map">
       <h2>Vicinity Map</h2>
