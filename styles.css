@@ -126,15 +126,16 @@ nav img {
     height: auto;
     object-fit: contain;
     object-position: center;
-
+  
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     transform: scale(var(--zoom));
     transform-origin: var(--x) var(--y);
     clip-path: inset(calc((1 - 1 / var(--zoom)) * (var(--y))) calc((1 - 1 / var(--zoom)) * (100% - var(--x))) calc((1 - 1 / var(--zoom)) * (100% - var(--y))) calc((1 - 1 / var(--zoom)) * (var(--x))));
-
-    background: linear-gradient(rgb(4, 9, 30, 0.2), rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.3));
+  
+    animation-name: fade;
+    animation-duration: 4s;
 }
 
 .slide::before {
@@ -184,11 +185,22 @@ nav img {
     font-weight: bold;
     font-size: 12px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 60%;
     user-select: none;
     z-index: 2;
 }
 
+@keyframes fade {
+    from {
+      opacity: 0.5
+    }
+  
+    to {
+      opacity: 1
+    }
+
+}
+  
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -196,7 +208,7 @@ nav img {
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(118, 118, 118, 0.5);
 }
 
 .text-box {
@@ -662,4 +674,4 @@ footer .copyright {
     .newsletter input[type="email"] {
         width: 80%;
     }
-}
+}s
