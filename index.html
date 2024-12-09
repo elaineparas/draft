@@ -11,7 +11,10 @@
   <title>Nature FunTraventure</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   <style>
     html {
       scroll-behavior: smooth;
@@ -22,7 +25,7 @@
       bottom: 20px;
       right: 20px;
       background-color: #82896e;
-      color: white;
+      color: #fff;
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
@@ -32,6 +35,7 @@
 
     .back-to-top:hover {
       background-color: #acb984;
+      color: #fff;
     }
 
     body.scrolled .back-to-top {
@@ -41,6 +45,7 @@
     .container {
       display: inline-block;
       cursor: pointer;
+      color: white;
     }
 
     .bar1,
@@ -74,7 +79,7 @@
       <div class="nav-links" id="navLinks">
         <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
         <ul>
-          <li><a href="#index.html">HOME</a></li>
+          <li><a href="#">HOME</a></li>
           <li><a href="#history">HISTORY</a></li>
           <li><a href="#experiences">EXPERIENCES</a></li>
           <li><a href="#vicinity-map">VICINITY MAP</a></li>
@@ -161,85 +166,187 @@
   </script>
 
   <main>
-    <section class="history-container" id="history">
-      <h2>History</h2>
-      <div class="history-item">
-        <p>Sumlang Lake is located in Barangay Sumlang, Camalig, Albay. The name of the barangay and lake was derived
-          from bamboo shoots locally called “islang” that are common in the area harvested for food. The water area of
-          the lake, wherein different flora and fauna and various fish species such as tilapia and fresh water shrimps
-          can be found. Most of the residents of Barangay Sumlang engage in handicraft making and agriculture.</p>
 
-        <h3>2012</h3>
-        <h4><strong>The Potential of Local Economic Development in Sumlang Lake</strong></h4>
-        <img src="history/img.png" alt="hist">
-        <p><em>"Ito ay pagkakaisa ng mamamayan sa iisang adhikaing magbago patungo sa kaunlaran".</em><strong>- Kap Jun
-            Napa</strong></p>
-        <p>The Sumlang Barangay Council with the help of the Local Government Unit of Camalig initiated cleaning and
-          dredging of water lilies at the lake last 2012 through food for work program. Since then, the barangay council
-          created a working group composed of the local residents tasked to maintain the cleanliness of the lake.</p>
+    <div class="container">
+      <h2 class="text-center mb-5" id="history">History</h2>
+      <p>Sumlang Lake is located in Barangay Sumlang, Camalig, Albay. The name of the barangay and lake was derived
+        from bamboo shoots locally called “islang” that are common in the area harvested for food. The water area of
+        the lake, wherein different flora and fauna and various fish species such as tilapia and fresh water shrimps
+        can be found. Most of the residents of Barangay Sumlang engage in handicraft making and agriculture.
+      </p>
+      <div class="timeline">
+        <!-- First Event -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <p class="date">2012</p>
+            <h4><strong>The Potential of Local Economic Development in Sumlang Lake</strong></h4>
+            <img src="History/20121.png" alt="2012" class="img-fluid mb-3">
+            <p><em>"Ito ay pagkakaisa ng mamamayan sa iisang adhikaing magbago patungo sa kaunlaran".</em><strong>- Kap
+                Jun
+                Napa</strong></p>
+            <p>The Sumlang Barangay Council with the help of the Local Government Unit of Camalig initiated cleaning and
+              dredging of water lilies at the lake last 2012 through food for work program. Since then, the barangay
+              council
+              created a working group composed of the local residents tasked to maintain the cleanliness of the lake.
+            </p>
+          </div>
+        </div>
+
+        <!-- Second Event -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <p class="date">2013</p>
+            <h4><strong>Initial Phase of Development of Sumlang Lake</strong></h4>
+            <img src="History/2013.png" alt="First ISO Standards" class="img-fluid mb-3">
+            <p>In the year 2013, the barangay and the local tourism office and stakeholders started promoting the place
+              and
+              attracting more visitors to try the balsa boating activity. Consequently, the LGU and the barangay
+              conducted
+              The Balsa Race, a unique water sports event that draws even more participants from the neighboring
+              barangays,
+              municipalities, cities, and visiting guests. Sumlang Lake became the venue of photography sessions,
+              culinary
+              and cooking demos and photo shoots, product showcase activities during the Pinangat Festival and Sumlang
+              Lake
+              Festival, and location shoots of some film productions.</p>
+          </div>
+        </div>
+
+        <!-- Third Event -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <p class="date">2014 - 2018</p>
+            <h4><strong>Continuous Development of Sumlang Lake</strong></h4>
+            <img src="History/20141.png" alt="2012" class="img-fluid mb-3">
+            <p>As more tourists arrived in the area, the barangay ventured into the operation of the tourism site
+              privately
+              managed by the private tour operators and business stakeholders. More improvements on the lake such as the
+              construction of a visitors information center, cottages, path walks, and trails; improvement of lighting,
+              comfort rooms, and parking space and development of the area.</p>
+
+            <h4>Establishments Built</h4>
+            <p><strong>Fishyalan (2016)</strong></p>
+            <img src="History/2016.png" alt="hist">
+
+            <p><strong>Sumlang Lake Eco Park (2017)</strong></p>
+            <img src="History/20171.png" alt="hist">
+          </div>
+        </div>
+
+        <!-- Fourth Event -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <p class="date">2021 - 2022</p>
+            <h4><strong>The Eco-Tourism Development and Its Impact on the Quality of Life of the Community</strong></h4>
+            <img src="History/20121.png" alt="First ISO Standards" class="img-fluid mb-3">
+            <p>There was a decline in number of tourists visiting the lake due to the effect of the pandemic from 2020
+              up to
+              this time. However, in December 2021 the Lake re-opened its gates, and tourists started to visit us once
+              more.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fifth Event -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <p class="date">2023 - Present</p>
+            <h4><strong>The Potential of Local Economic Development in Sumlang Lake</strong></h4>
+            <img src="History/20223.png" alt="2012" class="img-fluid mb-3">
+            <p>The emergence of businesses in the area flourished as more tourists began to visit, drawn by the
+              breathtaking
+              beauty of Mayon Volcano and the serene lake that lies in its shadow. This influx of visitors created a
+              vibrant
+              local economy, with new establishments sprouting up to cater to the growing demand. Local artisans also
+              saw an
+              opportunity to showcase their crafts, selling handmade goods that reflected the region's rich cultural
+              heritage.
+              As word spread about the stunning views and unique experiences available, the area's reputation as a
+              must-visit
+              destination grew, leading to a steady increase in both domestic and international tourists.
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="history-item">
-        <h3>2013</h3>
-        <h4><strong>Initial Phase of Development of Sumlang Lake</strong></h4>
-        <img src="history/img.png" alt="hist">
-        <p>In the year 2013, the barangay and the local tourism office and stakeholders started promoting the place and
-          attracting more visitors to try the balsa boating activity. Consequently, the LGU and the barangay conducted
-          The Balsa Race, a unique water sports event that draws even more participants from the neighboring barangays,
-          municipalities, cities, and visiting guests. Sumlang Lake became the venue of photography sessions, culinary
-          and cooking demos and photo shoots, product showcase activities during the Pinangat Festival and Sumlang Lake
-          Festival, and location shoots of some film productions.</p>
-      </div>
 
-      <div class="history-item">
-        <h3>2014 - 2018</h3>
-        <h4>Continuous Development of Sumlang Lake</h4>
-        <img src="history/img.png" alt="hist">
-        <p>As more tourists arrived in the area, the barangay ventured into the operation of the tourism site privately
-          managed by the private tour operators and business stakeholders. More improvements on the lake such as the
-          construction of a visitors information center, cottages, path walks, and trails; improvement of lighting,
-          comfort rooms, and parking space and development of the area.</p>
-
-        <h4>Establishments Built</h4>
-        <p><strong>Fishyalan (2016)</strong></p>
-        <img src="history/img.png" alt="hist">
-
-        <p><strong>Sumlang Lake Eco Park (2017)</strong></p>
-        <img src="history/img.png" alt="hist">
-      </div>
-
-      <div class="history-item">
-        <h3>2021 - 2022</h3>
-        <h4>The Eco-Tourism Development and Its Impact on the Quality of Life of the Community</h4>
-        <img src="history/img.png" alt="hist">
-        <p>There was a decline in number of tourists visiting the lake due to the effect of the pandemic from 2020 up to
-          this time. However, in December 2021 the Lake re-opened its gates, and tourists started to visit us once more.
-        </p>
-      </div>
-
-      <div class="history-item">
-        <h3>2023 - Present</h3>
-        <img src="history/img.png" alt="hist">
-        <p>The emergence of businesses in the area flourished as more tourists began to visit, drawn by the breathtaking
-          beauty of Mayon Volcano and the serene lake that lies in its shadow. This influx of visitors created a vibrant
-          local economy, with new establishments sprouting up to cater to the growing demand. Local artisans also saw an
-          opportunity to showcase their crafts, selling handmade goods that reflected the region's rich cultural
-          heritage.
-          As word spread about the stunning views and unique experiences available, the area's reputation as a
-          must-visit
-          destination grew, leading to a steady increase in both domestic and international tourists.
-        </p>
-      </div>
-    </section>
 
     <p class="main-header1" id="experiences"> EXPERIENCES </p>
-    <div class="wrapper">
-      <h2>Socorro’s The Venue</h2>
-      <div class="image-container">
-        <img src="Photos/365450991_713196864153776_8427043726075931265_n.jpg" alt="Placeholder Image">
+    <div class="experience-container">
+      <div class="experience-box">
+        <h3>Entrance Fees</h3>
+        <table>
+          <tr>
+            <td>Children aged 8-12 Years Old</td>
+            <td class="center-text"><strong>₱60.00</strong></td>
+          </tr>
+          <tr>
+            <td>Adults</td>
+            <td class="center-text"><strong>₱100.00</strong></td>
+          </tr>
+          <tr>
+            <td>Senior Citizens</td>
+            <td rowspan="2" class="center-text">A discounted rate of <strong> ₱84.00</strong></td>
+          </tr>
+          <tr>
+            <td>Persons With Disabilities (PWD)</td>
+          </tr>
+        </table>
       </div>
-      <p class="pemphasized"> <br> Where Extraordinary Happens <br> Events Venue, Catering Services, Decorating Services
+
+      <div class="experience-box">
+        <h3>Parking Fees</h3>
+        <table>
+          <tr>
+            <td>Four-wheel Vehicles</td>
+            <td class="center-text"><strong>₱20.00</strong></td>
+          </tr>
+          <tr>
+            <td>Two-wheel Vehicles</td>
+            <td rowspan="2" class="center-text"><strong>₱10.00</strong></td>
+          </tr>
+          <tr>
+            <td>Three-wheel Vehicles</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="experience-box">
+        <h3>Water Activities</h3>
+        <table>
+          <tr>
+            <td>Aqua Bike</td>
+            <td rowspan="2" class="center-text"><strong>₱100.00</strong> <u> per head</u></td>
+            <td rowspan="3">For 30-minute rental period</td>
+          </tr>
+          <tr>
+            <td>Kayak</td>
+          </tr>
+          <tr>
+            <td>Balsa</td>
+            <td class="center-text"><strong>₱80.00</strong> <u>per head</u></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="section-space"></div>
+      <h1><a href="https://www.facebook.com/socorrosthevenue">Socorro’s The Venue</a></h1>
+      <p class="pemphasized"> <br> <i>Where Extraordinary Happens</i> <br> <strong>Events Venue, Catering Services,
+          Decorating Services</strong>
       </p>
+      <div class="image-container">
+        <img id="mainImage" src="Experiences/the venue day.jpg" alt="Placeholder Image">
+      </div>
+      <div class="row" id="imageGrid">
+        <div class="column">
+          <img src="Experiences/the venue day.jpg" alt="The Venue Day" onclick="replaceMainImage(this)">
+          <img src="Experiences/stv.jpg" alt="Background" onclick="replaceMainImage(this)">
+          <img src="Experiences/stv1.jpg" alt="Kiosk" onclick="replaceMainImage(this)">
+          <img src="Experiences/the venue night.jpg" alt="Kiosk" onclick="replaceMainImage(this)">
+        </div>
+      </div>
       <p class="description">
         Socorro's The Venue is a premier event destination known for transforming any occasion into an unforgettable
         experience.
@@ -255,12 +362,28 @@
         where extraordinary truly happens.</p>
       </p>
 
+      <script>
+        function replaceMainImage(imgElement) {
+          var mainImage = document.getElementById("mainImage");
+          mainImage.src = imgElement.src;
+          mainImage.alt = imgElement.alt;
+        }
+      </script>
+
       <div class="section-space"></div>
-      <h1>Socorro’s Lakeside Restaurant and Grill</h1>
+      <h1><a href="https://www.facebook.com/SocorrosLRG">Socorro’s Lakeside Restaurant and Grill</a></h1>
+      <p class="pemphasized"><strong>Opens at 10am - 5pm daily</strong></p>
       <div class="image-container">
-        <img src="Photos/slgr3.jpg" alt="Placeholder Image">
+        <img id="mainImage1" src="Photos/slgr3.jpg" alt="Placeholder Image">
       </div>
-      <p class="pemphasized"> Opens at 10am - 5pm daily </p>
+      <div class="row" id="imageGrid">
+        <div class="column">
+          <img src="Experiences/slgr3.jpg" alt="The Venue Day" onclick="replaceMainImage1(this)">
+          <img src="Experiences/sr.jpg" alt="Background" onclick="replaceMainImage1(this)">
+          <img src="Experiences/sr1.jpg" alt="Kiosk" onclick="replaceMainImage1(this)">
+          <img src="Experiences/sr2.jpg" alt="Kiosk" onclick="replaceMainImage1(this)">
+        </div>
+      </div>
       <p class="description">
         Set against the stunning backdrop of a tranquil lake and majestic Mt. Mayon, Socorro’s Lakeside Restaurant and
         Grill offers a
@@ -273,12 +396,28 @@
         recommended for great food, top-notch service, and unforgettable views.
       </p>
 
+      <script>
+        function replaceMainImage1(imgElement) {
+          var mainImage1 = document.getElementById("mainImage1");
+          mainImage1.src = imgElement.src;
+          mainImage1.alt = imgElement.alt;
+        }
+      </script>
+
       <div class="section-space"></div>
-      <h1>Socorro’s Café </h1>
+      <h1><a href="https://www.facebook.com/SocorrosCafe">Socorro’s Café</a></h1>
+      <p class="pemphasized"> <strong>Opens at 9am - 8pm daily</strong></p>
       <div class="image-container">
-        <img src="Photos/cafe2.jpg" alt="Placeholder Image">
+        <img id="mainImage2" src="Experiences/sc1.jpg" alt="Placeholder Image">
       </div>
-      <p class="pemphasized"> Sumlang Lake Branch: 9am - 8pm daily <br> Quitinday Hills Branch: 9am - 5pm daily </p>
+      <div class="row" id="imageGrid">
+        <div class="column">
+          <img src="Experiences/sc1.jpg" alt="The Venue Day" onclick="replaceMainImage2(this)">
+          <img src="Experiences/sc.jpg" alt="Background" onclick="replaceMainImage2(this)">
+          <img src="Experiences/sc2.jpg" alt="Kiosk" onclick="replaceMainImage2(this)">
+          <img src="Experiences/sc3.jpg" alt="Kiosk" onclick="replaceMainImage2(this)">
+        </div>
+      </div>
       <p class="description">
         At Socorro’s Café, every cup of coffee is an experience. Nestled in a tranquil spot with the breathtaking Mayon
         Volcano as its backdrop,
@@ -295,29 +434,77 @@
         cup of coffee, freshly brewed to perfection, paired with light bites and pastries.
       </p>
 
+      <script>
+        function replaceMainImage2(imgElement) {
+          var mainImage2 = document.getElementById("mainImage2");
+          mainImage2.src = imgElement.src;
+          mainImage2.alt = imgElement.alt;
+        }
+      </script>
+
       <div class="section-space"></div>
-      <h1>Fishyalan</h1>
+      <h1><a href="https://www.facebook.com/profile.php?id=100090760445753">Fishyalan</a></h1>
       <div class="image-container">
-        <img src="Photos/fishyalan.jpg" alt="Placeholder Image">
+        <img id="mainImage3" src="Experiences/fis3.jpg" alt="Placeholder Image">
       </div>
-      <p class="pemphasized"> Fishing rates<br>
-        Fish feeding: Php 20.00 <br>
-        Fishing equipment rental: Php 50.00 <br>
-        Fish: Php 150.00 / kilo <br> </p>
+      <div class="row" id="imageGrid">
+        <div class="column">
+          <img src="Experiences/fis3.jpg" alt="The Venue Day" onclick="replaceMainImage3(this)">
+          <img src="Experiences/fis2cpy.jpg" alt="Background" onclick="replaceMainImage3(this)">
+          <img src="Experiences/fis6.jpg" alt="Kiosk" onclick="replaceMainImage3(this)">
+          <img src="Experiences/fis1.jpg" alt="Kiosk" onclick="replaceMainImage3(this)">
+        </div>
+      </div>
       <p class="description">
         Fishyalan, located at the scenic Sumlang Lake, offers an ideal spot for visitors who enjoy fishing in a
         peaceful, natural setting.
       </p>
       <p class="description"> Whether you're a seasoned angler or just looking to unwind by the water, Fishyalan
         provides a tranquil environment to enjoy fishing while taking in the beauty of the lake. It’s a perfect way to
-        connect with nature and experience the calm of Sumlang Lake. </p>
+        connect with nature and experience the calm of Sumlang Lake.
+      </p>
+
+      <div class="experience-box">
+        <h3>Fishing Rates</h3>
+        <table>
+          <tr>
+            <td>Fish Feeding</td>
+            <td class="center-text"><strong>Php 20.00</strong></td>
+          </tr>
+          <tr>
+            <td>Fishing Equipment Rental</td>
+            <td class="center-text"><strong>Php 50.00</strong></td>
+          </tr>
+          <tr>
+            <td>Fish</td>
+            <td class="center-text"><strong>Php 150.00</strong> / kilo</td>
+          </tr>
+        </table>
+      </div>
+
+      <script>
+        function replaceMainImage3(imgElement) {
+          var mainImage3 = document.getElementById("mainImage3");
+          mainImage3.src = imgElement.src;
+          mainImage3.alt = imgElement.alt;
+        }
+      </script>
 
       <div class="section-space"></div>
-      <h1>NAPA Food & Craft <br> Pasalubong Center OTOP Hub</h1>
-      <div class="image-container">
-        <img src="Photos/otop1.jpg" alt="Placeholder Image">
-      </div>
+      <h1><a href="https://www.facebook.com/profile.php?id=100076163470542">NAPPA Food & Craft <br> Pasalubong Center
+          OTOP Hub</a></h1>
       <p class="pemphasized"> ONE TOWN, ONE PRODUCT (OTOP HUB) Philippines </p>
+      <div class="image-container">
+        <img id="mainImage4" src="Experiences/otop5.jpg" alt="Placeholder Image">
+      </div>
+      <div class="row" id="imageGrid">
+        <div class="column">
+          <img src="Experiences/otop5.jpg" alt="The Venue Day" onclick="replaceMainImage4(this)">
+          <img src="Experiences/otop4.jpg" alt="Background" onclick="replaceMainImage4(this)">
+          <img src="Experiences/otop3cpy.jpg" alt="Kiosk" onclick="replaceMainImage4(this)">
+          <img src="Experiences/otop.jpg" alt="Kiosk" onclick="replaceMainImage4(this)">
+        </div>
+      </div>
       <p class="description">
         In partnership with NAPA Food & Craft Pasalubong Center at Sumlang Lake is a priority program for MSMEs as
         governments customized interventions to drive inclusive growth for local economic growth. </p>
@@ -326,12 +513,20 @@
         Pili chocolate, artisanal handmade
         pottery, crispy Taro chips, creamy Cassava cheesecake, and more.
       </p>
-      <p class="dsecription">
+      <p class="description">
         In addition to its main branch at Sumlang Lake, the NAPA Food & Craft Pasalubong Center also has a vibrant
         location at Quitinday Green Hills.
       </p>
 
-      <p class="main-header2"> THINGS TO DO <br> AT SUMLANG LAKE </p>
+      <script>
+        function replaceMainImage4(imgElement) {
+          var mainImage4 = document.getElementById("mainImage4");
+          mainImage4.src = imgElement.src;
+          mainImage4.alt = imgElement.alt;
+        }
+      </script>
+
+      <p class="main-header2"> Things to do at Sumlang Lake </p>
 
       <div class="section-space"></div>
       <h1>Balsa Ride</h1>
@@ -346,7 +541,7 @@
       <div class="section-space"></div>
       <h1>Cultural Demonstration</h1>
       <div class="image-container">
-        <img src="Photos/kiosk.jpg" alt="Placeholder Image">
+        <img src="Experiences/demo 1.jpg" alt="Placeholder Image">
       </div>
       <p class="description">
         Immerse yourself in local culture with a visit to the cottages near the souvenir shop, where you can watch
@@ -367,7 +562,7 @@
       <div class="section-space"></div>
       <h1>Shop for Souvenirs</h1>
       <div class="image-container">
-        <img src="Photos/otop2.jpg" alt="Placeholder Image">
+        <img src="Experiences/otop6.jpg" alt="Placeholder Image">
       </div>
       <p class="description">
         Don’t forget to stop by the souvenir shop, where you can pick up locally made items such as bags, baskets, home
@@ -378,74 +573,285 @@
       <div class="section-space"></div>
       <h1>Capture the Moment</h1>
       <div class="image-container">
-        <img src="Photos/sl escapade.jpg" alt="Placeholder Image">
+        <img src="Experiences/demo.jpg" alt="Placeholder Image">
       </div>
       <p class="description">
         Make sure to snap some photos to capture your unforgettable experience at Sumlang Lake!
       </p>
     </div>
-    </p>
 
     <section class="vicinitymap-container" id="vicinity-map">
-      <h2>Vicinity Map</h2>
+      <h2>VICINITY MAP</h2>
       <div class="map-container">
         <iframe class="google-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1479.5350458622222!2d123.67092985189132!3d13.179547622103911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a106f25e94cef9%3A0x2333d228fb8e39c6!2sSumlang%20Lake!5e1!3m2!1sen!2sph!4v1732934890367!5m2!1sen!2sph"
           frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <div class="vicinitymap-item">
+      <div class="vicinitymap-item" id="by-car">
         <h3>How to get here</h3>
         <h3>By Car</h3>
         <p><strong>From Legazpi City (Approx. 20-30 minutes drive)</strong></p>
+        <div class="road-container">
+          <div class="start-sign">Start</div>
+          <div class="road">
+            <div class="car-animation" id="draggableCar">🚘</div>
+          </div>
+          <div class="pin-location">📍</div>
+        </div>
         <ol>
-          <li>Head south from the city center towards Barangay Sumlang in Camalig, Albay.</li>
-          <li>Take the Diversion Road (or the main highway) heading towards Camalig.</li>
-          <li>Continue driving and follow signs towards Sumlang Lake. The lake is located near Socorro's The
+          <li><span class="step-number">1</span>Head south from the city center towards Barangay Sumlang in Camalig,
+            Albay.</li>
+          <li><span class="step-number">2</span>Take the Diversion Road (or the main highway) heading towards Camalig.
+          </li>
+          <li><span class="step-number">3</span>Continue driving and follow signs towards Sumlang Lake. The lake is
+            located near Socorro's The
             Venue and can be accessed from the parking area at the back.</li>
-          <li>You may also use a navigation app (like Google Maps or Waze) to get real-time directions, as the
+          <li><span class="step-number">4</span>You may also use a navigation app (like Google Maps or Waze) to get
+            real-time directions, as the
             route is well-marked.</li>
         </ol>
         <p><strong>Parking:</strong> Sumlang Lake has parking spaces available near the entrance, and parking is
           usually free or at a minimal cost.</p>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var car = document.querySelector("#by-car #draggableCar");
+          var road = document.querySelector("#by-car .road");
+          var listItems = document.querySelectorAll("#by-car ol li");
+          var isDragging = false;
+          var startX, startLeft;
+
+          car.addEventListener("mousedown", function (e) {
+            isDragging = true;
+            startX = e.clientX;
+            startLeft = car.offsetLeft;
+            car.style.transition = "none"; // Disable transition during drag
+          });
+
+          document.addEventListener("mousemove", function (e) {
+            if (isDragging) {
+              var dx = e.clientX - startX;
+              var newLeft = startLeft + dx;
+
+              // Limit the car's movement within the road
+              var roadRect = road.getBoundingClientRect();
+              var carRect = car.getBoundingClientRect();
+              if (newLeft < 0) {
+                newLeft = 0;
+              } else if (newLeft + carRect.width > roadRect.width) {
+                newLeft = roadRect.width - carRect.width;
+              }
+
+              car.style.left = newLeft + "px";
+
+              // Check proximity to list items
+              listItems.forEach(function (item) {
+                var itemRect = item.getBoundingClientRect();
+                if (carRect.right > itemRect.left && carRect.left < itemRect.right) {
+                  item.classList.add("nearby");
+                } else {
+                  item.classList.remove("nearby");
+                }
+              });
+            }
+          });
+
+          document.addEventListener("mouseup", function () {
+            if (isDragging) {
+              isDragging = false;
+              car.style.transition = "transform 0.3s ease"; // Re-enable transition after drag
+            }
+          });
+
+          car.addEventListener("click", function () {
+            var collapsibleText = document.querySelector("#by-car #collapsibleText");
+            if (collapsibleText.classList.contains("show")) {
+              collapsibleText.classList.remove("show");
+            } else {
+              collapsibleText.classList.add("show");
+            }
+          });
+        });
+      </script>
 
       <hr>
 
-      <div class="vicinitymap-item">
+      <div class="vicinitymap-item" id="by-motorcycle">
         <h3>By Motorcycle</h3>
         <p><strong>From Legazpi City (Approx. 20-30 minutes ride)</strong></p>
+        <div class="road-container">
+          <div class="start-sign">Start</div>
+          <div class="road">
+            <div class="motorcycle-animation" id="draggableMotorcycle">🏍️</div>
+          </div>
+          <div class="pin-location">📍</div>
+        </div>
         <ol>
-          <li>Start by heading south towards Barangay Sumlang, Camalig.</li>
-          <li>Take the Diversion Road and continue along the main highway towards Sumlang Lake.</li>
-          <li>As you approach the lake, follow signs or ask locals for directions to the designated parking
+          <li><span class="step-number">1</span>Start by heading south towards Barangay Sumlang, Camalig.</li>
+          <li><span class="step-number">2</span>Take the Diversion Road and continue along the main highway towards
+            Sumlang Lake.</li>
+          <li><span class="step-number">3</span>As you approach the lake, follow signs or ask locals for directions to
+            the designated parking
             area near Socorro's The Venue.</li>
-          <li>Motorcycles can easily park near the lake, where riders can leave their bikes and explore the
+          <li><span class="step-number">4</span>Motorcycles can easily park near the lake, where riders can leave their
+            bikes and explore the
             area.</li>
         </ol>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var motorcycle = document.querySelector("#by-motorcycle #draggableMotorcycle");
+          var road = document.querySelector("#by-motorcycle .road");
+          var listItems = document.querySelectorAll("#by-motorcycle ol li");
+          var isDragging = false;
+          var startX, startLeft;
+
+          motorcycle.addEventListener("mousedown", function (e) {
+            isDragging = true;
+            startX = e.clientX;
+            startLeft = motorcycle.offsetLeft;
+            motorcycle.style.transition = "none"; // Disable transition during drag
+          });
+
+          document.addEventListener("mousemove", function (e) {
+            if (isDragging) {
+              var dx = e.clientX - startX;
+              var newLeft = startLeft + dx;
+
+              // Limit the motorcycle's movement within the road
+              var roadRect = road.getBoundingClientRect();
+              var motorcycleRect = motorcycle.getBoundingClientRect();
+              if (newLeft < 0) {
+                newLeft = 0;
+              } else if (newLeft + motorcycleRect.width > roadRect.width) {
+                newLeft = roadRect.width - motorcycleRect.width;
+              }
+
+              motorcycle.style.left = newLeft + "px";
+
+              // Check proximity to list items
+              listItems.forEach(function (item) {
+                var itemRect = item.getBoundingClientRect();
+                if (motorcycleRect.right > itemRect.left && motorcycleRect.left < itemRect.right) {
+                  item.classList.add("nearby");
+                } else {
+                  item.classList.remove("nearby");
+                }
+              });
+            }
+          });
+
+          document.addEventListener("mouseup", function () {
+            if (isDragging) {
+              isDragging = false;
+              motorcycle.style.transition = "transform 0.3s ease"; // Re-enable transition after drag
+            }
+          });
+
+          motorcycle.addEventListener("click", function () {
+            var collapsibleText = document.querySelector("#by-motorcycle #collapsibleTextMotorcycle");
+            if (collapsibleText.classList.contains("show")) {
+              collapsibleText.classList.remove("show");
+            } else {
+              collapsibleText.classList.add("show");
+            }
+          });
+        });
+      </script>
 
       <hr>
 
-      <div class="vicinitymap-item">
+      <div class="vicinitymap-item" id="by-commute">
         <h3>By Commute</h3>
         <p><strong>From Legazpi City (Approx. 30-45 minutes travel time)</strong></p>
+        <div class="road-container">
+          <div class="start-sign">You are here</div>
+          <div class="road">
+            <div class="jeepney-animation" id="draggableJeepney">🚍</div>
+          </div>
+          <div class="pin-location">📍</div>
+        </div>
         <ol>
-          <li>Go to the Legazpi City Grand Terminal, where you’ll find jeepneys and buses bound for Camalig.
+          <li><span class="step-number">1</span>Go to the Legazpi City Grand Terminal, where you’ll find jeepneys and
+            buses bound for Camalig.
           </li>
-          <li>Take a jeepney or bus that passes through Camalig, preferably those going to Sumlang or Tabaco.
+          <li><span class="step-number">2</span>Take a jeepney or bus that passes through Camalig, preferably those
+            going to Sumlang or Tabaco.
           </li>
-          <li>Get off at Sumlang Crossing or near the Barangay Hall in Camalig (ask the driver or conductor to
+          <li><span class="step-number">3</span>Get off at Sumlang Crossing or near the Barangay Hall in Camalig (ask
+            the driver or conductor to
             notify you when to get off).</li>
-          <li>From there, take a tricycle or a short walk (about 10-15 minutes) to Sumlang Lake.
+          <li><span class="step-number">4</span>From there, take a tricycle or a short walk (about 10-15 minutes) to
+            Sumlang Lake.
             Alternatively, some jeepneys may drop passengers closer to the lake entrance, depending on the
             route.</li>
         </ol>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var jeepney = document.querySelector("#by-commute #draggableJeepney");
+          var road = document.querySelector("#by-commute .road");
+          var listItems = document.querySelectorAll("#by-commute ol li");
+          var isDragging = false;
+          var startX, startLeft;
+
+          jeepney.addEventListener("mousedown", function (e) {
+            isDragging = true;
+            startX = e.clientX;
+            startLeft = jeepney.offsetLeft;
+            jeepney.style.transition = "none"; // Disable transition during drag
+          });
+
+          document.addEventListener("mousemove", function (e) {
+            if (isDragging) {
+              var dx = e.clientX - startX;
+              var newLeft = startLeft + dx;
+
+              // Limit the jeepney's movement within the road
+              var roadRect = road.getBoundingClientRect();
+              var jeepneyRect = jeepney.getBoundingClientRect();
+              if (newLeft < 0) {
+                newLeft = 0;
+              } else if (newLeft + jeepneyRect.width > roadRect.width) {
+                newLeft = roadRect.width - jeepneyRect.width;
+              }
+
+              jeepney.style.left = newLeft + "px";
+
+              // Check proximity to list items
+              listItems.forEach(function (item) {
+                var itemRect = item.getBoundingClientRect();
+                if (jeepneyRect.right > itemRect.left && jeepneyRect.left < itemRect.right) {
+                  item.classList.add("nearby");
+                } else {
+                  item.classList.remove("nearby");
+                }
+              });
+            }
+          });
+
+          document.addEventListener("mouseup", function () {
+            if (isDragging) {
+              isDragging = false;
+              jeepney.style.transition = "transform 0.3s ease"; // Re-enable transition after drag
+            }
+          });
+
+          jeepney.addEventListener("click", function () {
+            var collapsibleText = document.querySelector("#by-commute #collapsibleTextCommute");
+            if (collapsibleText.classList.contains("show")) {
+              collapsibleText.classList.remove("show");
+            } else {
+              collapsibleText.classList.add("show");
+            }
+          });
+        });
+      </script>
 
       <hr>
 
       <div class="vicinitymap-item">
-        <h3>Tips for Travelers</h3>
+        <h3>Tips for Travelers🗺️</h3>
         <ul>
           <li><strong>Car and Motorcycle:</strong> It’s recommended to use a GPS navigation app (Google Maps,
             Waze) to ensure you take the best route to the lake.</li>
@@ -514,57 +920,77 @@
   </main>
 
   <a href="#top" class="back-to-top">Back to Top</a>
-
-  <footer>
-    <div class="footer-content">
-      <div class="contacts">
-        <h4>Contact Us</h4>
-        <p>📍 Sumlang, Camalig, Albay, Philippines, 4502</p>
-        <p>📞 +63 968 887 3244</p>
-        <p><a href="mailto:info.naturefuntraventure@gmail.com">📧 info.naturefuntraventure@gmail.com</a></p>
-        <div class="social-media">
-          <a href="https://www.facebook.com/SumlangLakeNFT"><img src="Elements/fb-removebg-preview.png"
-              alt="Facebook" />
-          </a>
-        </div>
+  <footer id="footer" class="footer">
+    <div class="footer-flex-container">
+      <a href="index.html" aria-current="page" class="footer-logo-link w-inline-block w--current"><img
+          src="Elements/header.png" alt="logo" class="footer-image"></a>
+      <div>
+        <h2 class="light-bold-text-s footer-heading">Contact Us</h2>
+        <ul role="list" class="w-list-unstyled">
+          <li>
+            <a class="footer-link">📍 Sumlang, Camalig, Albay, Philippines, 4502</a>
+          </li>
+          <li>
+            <a class="footer-link">📞 +63 968 887 3244</a>
+          </li>
+          <li>
+            <a class="footer-link" href="mailto:info.naturefuntraventure@gmail.com">📧
+              info.naturefuntraventure@gmail.com</a></a>
+          </li>
+          <li>
+            <a class="footer-link social-media" href="https://www.facebook.com/SumlangLakeNFT" target="_blank"><img
+                src="Elements/fb-removebg-preview.png" alt="Facebook Logo" class="social-icon">
+              <span>Nature FunTraventure</span></a>
+          </li>
+        </ul>
       </div>
 
-      <div class="logos">
-        <h4>Reservations</h4>
+      <div>
+        <h2 class="light-bold-text-s footer-heading">Visit Us</h2>
         <div class="sponsor-logos">
-          <a href="https://www.facebook.com/socorrosthevenue" target="_blank"><img src="Elements/the venue.png"
-              alt="Socorro’s The Venue" /></a>
-          <a href="https://www.facebook.com/SocorrosLRG" target="_blank"><img src="Elements/resto.png"
-              alt="Socorro’s Lakeside Restaurant and Grill" /></a>
-          <a href="https://www.facebook.com/SocorrosCafe" target="_blank"><img src="Elements/cafe.png"
-              alt="Socorro’s Café" /></a>
-          <a href="https://www.facebook.com/profile.php?id=100076163470542" target="_blank">
-            <img src="Elements/otop.png" alt="OTOP (One Town One Product)" />
-          </a>
+          <ul role="list" class="w-list-unstyled">
+            
+              <a href="https://www.facebook.com/socorrosthevenue" target="_blank" class="footer-link"><img
+                  src="Elements/the venue.png"></a>
+           
+              <a href="https://www.facebook.com/SocorrosLRG" target="_blank" class="footer-link"><img
+                  src="Elements/resto.png"></a>
+            
+              <a href="https://www.facebook.com/SocorrosCafe" target="_blank" class="footer-link"><img
+                  src="Elements/cafe.png"></a>
+            
+              <a href="https://www.facebook.com/profile.php?id=100076163470542" target="_blank" class="footer-link"><img
+                  src="Elements/otop.png"></a>
+           
+          </ul>
         </div>
       </div>
-    </div>
 
-    <div class="quick-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="about-us.html">About Us •</a></li>
-        <li><a href="#">Privacy Policy •</a></li>
-        <li><a href="#">Terms of Service •</a></li>
-      </ul>
-    </div>
+      <div>
+        <h2 class="light-bold-text-s footer-heading">Quick Links</h2>
+        <ul role="list" class="w-list-unstyled">
+          <li>
+            <a href="#about-us.html" target="_blank" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="#privacy-policy.html" target="_blank" class="footer-link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#terms-of-service.html" target="_blank" class="footer-link">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="newsletter">
-      <h4>Get in touch with us!</h4>
-      <form action="#">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+      <div class="newsletter">
+        <h4>Get in touch with us!</h4>
+        <form action="#">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
 
-    <div class="copyright">
-      <p>&copy; Copyright 2024 Nature FunTraventure. All Rights Reserved.</p>
     </div>
+    <div class="copyright-line">2024 Nature FunTraventure. All Rights Reserved.</div>
   </footer>
 
   <script>
